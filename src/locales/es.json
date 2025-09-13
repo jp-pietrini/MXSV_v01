@@ -1,0 +1,168 @@
+{
+  "metadata": {
+    "title": "México en Silicon Valley 2026",
+    "description": "Únete a la conferencia premier que conecta la innovación mexicana con el ecosistema tecnológico de Silicon Valley. 21-22 de febrero de 2026 en la Universidad de Stanford."
+  },
+  "hero": {
+    "title": "México en Silicon Valley",
+    "subtitle": "Conectando Innovación a Través de Fronteras",
+    "date": "21-22 de Febrero, 2026",
+    "location": "Universidad de Stanford",
+    "cta": {
+      "register": "Registrar Interés",
+      "tickets": "Obtener Boletos"
+    },
+    "countdown": {
+      "days": "Días",
+      "hours": "Horas",
+      "minutes": "Minutos",
+      "seconds": "Segundos"
+    }
+  },
+  "nav": {
+    "about": "Acerca de",
+    "program": "Programa",
+    "speakers": "Ponentes",
+    "sponsors": "Patrocinadores",
+    "tickets": "Boletos",
+    "contact": "Contacto",
+    "admin": "Admin"
+  },
+  "about": {
+    "title": "Acerca de MXSV",
+    "description": "Una conferencia de dos días diseñada para fortalecer el puente entre el creciente ecosistema tecnológico de México y el centro de innovación de Silicon Valley.",
+    "stats": {
+      "attendees": "300+ Asistentes",
+      "speakers": "50+ Ponentes",
+      "panels": "10+ Paneles",
+      "networking": "Networking Ilimitado"
+    },
+    "day1": {
+      "title": "Día 1: Silicon Valley → México",
+      "description": "Descubre cómo las innovaciones de Silicon Valley pueden adaptarse e implementarse en el mercado único de México"
+    },
+    "day2": {
+      "title": "Día 2: México → Silicon Valley",
+      "description": "Muestra el talento mexicano, startups e innovaciones listas para escalar globalmente"
+    }
+  },
+  "program": {
+    "title": "Programa",
+    "day0": {
+      "title": "20 de Febrero: Llegadas",
+      "description": "Tour tecnológico opcional por Silicon Valley"
+    },
+    "day1": {
+      "title": "21 de Febrero: Talleres para Líderes",
+      "workshops": {
+        "ai": "Fundamentos e Implementación de IA",
+        "social": "Innovación e Impacto Social",
+        "design": "Taller de Design Thinking"
+      }
+    },
+    "day2": {
+      "title": "22 de Febrero: Paneles Públicos",
+      "panels": {
+        "1": "El Estado de la Tecnología en México",
+        "2": "Oportunidades de Inversión Transfronteriza",
+        "3": "Construyendo Equipos Globales",
+        "4": "Innovación en Mercados Emergentes",
+        "5": "El Futuro de la Colaboración Tecnológica"
+      }
+    }
+  },
+  "speakers": {
+    "title": "Ponentes",
+    "subtitle": "Voces líderes en tecnología e innovación",
+    "tbd": "Lista de ponentes por anunciar",
+    "viewMore": "Ver Perfil"
+  },
+  "sponsors": {
+    "title": "Patrocinadores y Socios",
+    "subtitle": "Organizaciones apoyando la conexión México-Silicon Valley",
+    "tiers": {
+      "platinum": "Platino",
+      "gold": "Oro",
+      "silver": "Plata",
+      "bronze": "Bronce"
+    },
+    "cta": "Conviértete en Patrocinador"
+  },
+  "tickets": {
+    "title": "Obtén tus Boletos",
+    "subtitle": "Únete a nosotros en esta conferencia transformadora",
+    "early": "Early Bird",
+    "fast": "Fast Mover",
+    "general": "Admisión General",
+    "last": "Última Oportunidad",
+    "available": "disponibles",
+    "soldOut": "Agotado",
+    "buyNow": "Comprar Ahora",
+    "perTicket": "por boleto"
+  },
+  "merch": {
+    "title": "Mercancía Oficial",
+    "subtitle": "Llévate un recuerdo de MXSV 2026",
+    "sizes": "Tallas",
+    "addToCart": "Agregar al Carrito",
+    "outOfStock": "Agotado"
+  },
+  "contact": {
+    "title": "Registra tu Interés",
+    "subtitle": "Sé el primero en conocer actualizaciones y anuncios",
+    "form": {
+      "name": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "organization": "Organización",
+      "interest": "Tipo de Interés",
+      "comments": "Comentarios (Opcional)",
+      "submit": "Enviar",
+      "submitting": "Enviando...",
+      "success": "¡Gracias por tu interés! Nos pondremos en contacto pronto.",
+      "error": "Algo salió mal. Por favor intenta de nuevo."
+    },
+    "interestTypes": {
+      "participant": "Participante",
+      "media": "Medios",
+      "supporter": "Apoyo/Patrocinador",
+      "speaker": "Ponente",
+      "other": "Otro"
+    }
+  },
+  "faq": {
+    "title": "Preguntas Frecuentes",
+    "categories": {
+      "general": "General",
+      "logistics": "Logística",
+      "speakers": "Ponentes",
+      "tickets": "Boletos"
+    }
+  },
+  "footer": {
+    "rights": "Todos los derechos reservados",
+    "privacy": "Política de Privacidad",
+    "terms": "Términos de Servicio",
+    "contact": "Contáctanos"
+  },
+  "admin": {
+    "title": "Panel de Administración",
+    "login": {
+      "title": "Inicio de Sesión Admin",
+      "password": "Contraseña",
+      "submit": "Iniciar Sesión",
+      "error": "Contraseña inválida"
+    },
+    "nav": {
+      "dashboard": "Dashboard",
+      "forms": "Formularios de Interés",
+      "speakers": "Ponentes",
+      "sponsors": "Patrocinadores",
+      "tickets": "Boletos",
+      "products": "Productos",
+      "sections": "Secciones",
+      "faq": "FAQ",
+      "agenda": "Agenda",
+      "logout": "Cerrar Sesión"
+    }
+  }
+}

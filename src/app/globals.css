@@ -1,0 +1,158 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #0a0014;
+    --foreground: #ededed;
+    --border: #374151;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-inter), ui-sans-serif, system-ui;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-space-grotesk), ui-sans-serif, system-ui;
+  }
+}
+
+@layer components {
+  /* Glassmorphism effect */
+  .glass {
+    @apply bg-white/5 backdrop-blur-xl border border-white/10 rounded-2xl;
+  }
+
+  /* Gradient text */
+  .gradient-text {
+    @apply bg-gradient-to-r from-purple-500 via-blue-500 to-teal-400 bg-clip-text text-transparent;
+  }
+
+  /* Navigation styles */
+  .nav-glass {
+    @apply bg-black/80 backdrop-blur-xl border-b border-white/10;
+  }
+
+  /* Hero section */
+  .hero-bg {
+    @apply bg-gradient-to-br from-background via-purple-950/30 to-background min-h-screen relative;
+  }
+
+  .hero-bg::before {
+    content: '';
+    @apply absolute inset-0 bg-gradient-radial from-purple-500/10 via-blue-500/5 to-transparent;
+    animation: float 8s ease-in-out infinite;
+  }
+
+  /* Button styles */
+  .btn-gradient {
+    @apply bg-gradient-to-r from-purple-600 to-blue-600 text-white border-0 rounded-lg px-6 py-3 font-semibold transition-all duration-300 cursor-pointer;
+  }
+
+  .btn-gradient:hover {
+    @apply scale-105 shadow-lg shadow-purple-500/25;
+  }
+
+  .btn-glass {
+    @apply bg-white/10 backdrop-blur-sm border border-white/20 text-white rounded-lg px-6 py-3 transition-all duration-300 cursor-pointer;
+  }
+
+  .btn-glass:hover {
+    @apply bg-white/15 scale-105;
+  }
+
+  /* Card styles */
+  .card-3d {
+    @apply transition-transform duration-300;
+    transform-style: preserve-3d;
+  }
+
+  .card-3d:hover {
+    transform: rotateY(5deg) rotateX(-5deg) translateZ(20px);
+  }
+
+  /* Section spacing */
+  .section {
+    @apply py-20 md:py-32;
+  }
+
+  /* Custom background utilities */
+  .bg-dark {
+    background-color: #0a0014;
+  }
+
+  .bg-dark-card {
+    background-color: #1a0033;
+  }
+
+  .bg-dark-bg {
+    background-color: #0a0014;
+  }
+}
+
+@layer utilities {
+  /* Floating animation */
+  .floating {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  /* Transform utilities for 3D effects */
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+
+  .transform-3d {
+    transform-style: preserve-3d;
+  }
+
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+
+  /* Background gradient utilities */
+  .bg-gradient-radial {
+    background: radial-gradient(circle, var(--tw-gradient-stops));
+  }
+
+  /* Animation utilities */
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+}
+
+/* Animations */
+@keyframes float {
+  0%, 100% { 
+    transform: translateY(0px); 
+  }
+  50% { 
+    transform: translateY(-20px); 
+  }
+}
+
+@keyframes pulse-glow {
+  0%, 100% { 
+    opacity: 0.3; 
+  }
+  50% { 
+    opacity: 0.6; 
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-bg {
+    min-height: 80vh;
+  }
+  
+  .section {
+    @apply py-16;
+  }
+}
