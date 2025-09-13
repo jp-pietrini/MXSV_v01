@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react'
 import { useTranslations } from '@/hooks/use-translations'
 import { motion } from 'framer-motion'
 import { Check, Star, Zap, Crown, Clock, Users, AlertCircle } from 'lucide-react'
-import { formatCurrency } from '@/lib/utils'
+import { formatPrice } from '@/lib/utils'
 
 interface TicketTier {
   id: string
@@ -247,7 +247,7 @@ export function TicketsSection({ locale }: { locale: string }) {
                       
                       <div className="mb-4">
                         <span className="text-3xl font-bold gradient-text">
-                          {formatCurrency(ticket.price)}
+                          {formatPrice(ticket.price)}
                         </span>
                         <span className="text-gray-400 text-sm ml-1">
                           {t('perTicket')}

@@ -1,27 +1,45 @@
-import { Navigation } from '@/components/ui/navigation'
-import { HeroSection } from '@/components/sections/hero'
-import { AboutSection } from '@/components/sections/about'
-import { ProgramSection } from '@/components/sections/program'
-import { SpeakersSection } from '@/components/sections/speakers'
-import { SponsorsSection } from '@/components/sections/sponsors'
-import { TicketsSection } from '@/components/sections/tickets'
-import { FAQSection } from '@/components/sections/faq'
-import { ContactSection } from '@/components/sections/contact'
+"use client"
+
+import { Header } from "@/components/layouts/Header"
+import { Footer } from "@/components/layouts/Footer"
+import { HeroVariantA } from "@/components/sections/hero/variant-a"
+import { AboutVariantA } from "@/components/sections/about/variant-a"
+import { AgendaVariantA } from "@/components/sections/agenda/variant-a"
+import { SpeakersVariantA } from "@/components/sections/speakers/variant-a"
+import { SponsorsVariantA } from "@/components/sections/sponsors/variant-a"
+import { TicketsVariantA } from "@/components/sections/tickets/variant-a"
+import { FAQVariantA } from "@/components/sections/faq/variant-a"
+import { ContactVariantA } from "@/components/sections/contact/variant-a"
 
 export default function HomePage() {
   return (
-    <>
-      <Navigation locale="en" />
-      <main className="min-h-screen">
-        <HeroSection locale="en" />
-        <AboutSection />
-        <ProgramSection />
-        <SpeakersSection />
-        <SponsorsSection />
-        <TicketsSection locale="en" />
-        <FAQSection />
-        <ContactSection />
+    <div className="min-h-screen bg-white">
+      <Header />
+      <main>
+        <HeroVariantA />
+        <section id="about">
+          <AboutVariantA />
+        </section>
+        <section id="agenda">
+          <AgendaVariantA />
+        </section>
+        <section id="speakers">
+          <SpeakersVariantA />
+        </section>
+        <section id="sponsors">
+          <SponsorsVariantA />
+        </section>
+        <section id="tickets">
+          <TicketsVariantA />
+        </section>
+        <section id="faq">
+          <FAQVariantA />
+        </section>
+        <section id="contact">
+          <ContactVariantA />
+        </section>
       </main>
-    </>
+      <Footer />
+    </div>
   )
 }

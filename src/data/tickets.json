@@ -1,0 +1,65 @@
+[
+  {
+    "id": "ticket-early-bird",
+    "tier": "early-bird",
+    "name": "Early Bird",
+    "description": "Perfect for entrepreneurs and startup founders",
+    "price": 299,
+    "originalPrice": 399,
+    "quantity": 150,
+    "sold": 87,
+    "isActive": true,
+    "features": [
+      "Access to all sessions",
+      "Networking events",
+      "Welcome reception",
+      "Lunch both days",
+      "Digital materials",
+      "MXSV community access"
+    ],
+    "deadline": "2025-12-31T23:59:59",
+    "badge": "Limited Time",
+    "order": 1
+  },
+  {
+    "id": "ticket-regular",
+    "tier": "regular",
+    "name": "Regular",
+    "description": "Standard conference access",
+    "price": 399,
+    "quantity": 250,
+    "sold": 45,
+    "isActive": true,
+    "features": [
+      "Access to all sessions",
+      "Networking events",
+      "Welcome reception",
+      "Lunch both days",
+      "Digital materials",
+      "MXSV community access"
+    ],
+    "order": 2
+  },
+  {
+    "id": "ticket-vip",
+    "tier": "vip",
+    "name": "VIP",
+    "description": "Premium experience with exclusive benefits",
+    "price": 799,
+    "quantity": 75,
+    "sold": 23,
+    "isActive": true,
+    "features": [
+      "Everything in Regular",
+      "VIP seating",
+      "Exclusive networking dinner",
+      "Meet & greet with speakers",
+      "Priority support",
+      "Welcome gift package",
+      "Private VIP lounge access",
+      "Complimentary parking"
+    ],
+    "badge": "Most Popular",
+    "order": 3
+  }
+]

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "section-hero",
+    "name": "hero",
+    "displayName": "Hero Section",
+    "isVisible": true,
+    "order": 1
+  },
+  {
+    "id": "section-about",
+    "name": "about",
+    "displayName": "About Section",
+    "isVisible": true,
+    "order": 2
+  },
+  {
+    "id": "section-agenda",
+    "name": "agenda",
+    "displayName": "Agenda Section",
+    "isVisible": true,
+    "order": 3
+  },
+  {
+    "id": "section-speakers",
+    "name": "speakers",
+    "displayName": "Speakers Section",
+    "isVisible": true,
+    "order": 4
+  },
+  {
+    "id": "section-sponsors",
+    "name": "sponsors",
+    "displayName": "Sponsors Section",
+    "isVisible": true,
+    "order": 5
+  },
+  {
+    "id": "section-tickets",
+    "name": "tickets",
+    "displayName": "Tickets Section",
+    "isVisible": true,
+    "order": 6
+  },
+  {
+    "id": "section-faq",
+    "name": "faq",
+    "displayName": "FAQ Section",
+    "isVisible": true,
+    "order": 7
+  },
+  {
+    "id": "section-contact",
+    "name": "contact",
+    "displayName": "Contact Section",
+    "isVisible": true,
+    "order": 8
+  }
+]

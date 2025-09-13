@@ -1,27 +1,48 @@
-# Mexico in Silicon Valley (MXSV) 2026 - Landing Page
+# MXSV 2026 Landing Page
 
-A world-class, futuristic landing page for the MXSV conference featuring cutting-edge animations, e-commerce capabilities, and content management.
+A world-class landing page for Mexico in Silicon Valley conference featuring **Stripe-style design**, multiple UI variants, and comprehensive content management.
 
-## 🌟 Features Completed
+## 🎯 Project Overview
 
-### ✅ Core Infrastructure
+MXSV connects the innovation ecosystems of Mexico and Silicon Valley through a premier two-day conference at Stanford University (February 21-22, 2026). This landing page showcases three distinct design variants, all following Stripe-like design principles with clean aesthetics and subtle interactions.
+
+## ✅ **Stage 0-1 COMPLETED** - Foundation & UI Variants
+
+### 🏗️ Core Infrastructure
 - **Next.js 14+** with App Router and TypeScript
-- **Prisma ORM** with comprehensive PostgreSQL schema
-- **i18n Support** for English and Spanish
-- **Dark/Light Mode** with system preference detection
-- **Tailwind CSS** with custom futuristic design system
+- **Stripe-style Design System** with design tokens
+- **Framer Motion** for subtle animations (≤200ms)
+- **Three UI Variants** - Pure, Editorial, and Gradient approaches
+- **Static Data Layer** for rapid development
+- **Comprehensive Documentation** (`/docs/`)
 
-### ✅ Animation & Design
-- **Framer Motion** for smooth animations
-- **Particles.js** for interactive background effects
-- **Custom CSS** with glassmorphism and neon effects
-- **3D transforms** and hover animations
-- **Responsive design** for all devices
+### 🎨 Design Variants Implemented
 
-### ✅ Sections Built
-- **Hero Section** with countdown timer to Feb 21-22, 2026
-- **About Section** with animated statistics counters
-- **Navigation** with language toggle and theme switcher
+#### **Variant A: Pure Stripe** ✅ (Default)
+- Ultra-minimal design with 1-2px borders
+- Soft shadows and generous white space
+- Clean typography with restrained motion
+- **Route**: `/` (home page)
+
+#### **Variant B: Editorial Stripe** (Planned)
+- Larger typography and enhanced imagery
+- Editorial layouts for better content consumption
+- **Route**: `/experiments/variant-b`
+
+#### **Variant C: Gradient Accent** (Planned)
+- Subtle gradient accents on white backgrounds
+- Strategic color usage for visual interest
+- **Route**: `/experiments/variant-c`
+
+### 📱 Sections Completed (Variant A)
+- **Hero Section** - Animated landing with CTAs
+- **About Section** - Mission, vision, and stats
+- **Agenda Section** - Interactive day selector
+- **Speakers Section** - Keynotes and panelists
+- **Sponsors Section** - Multi-tier partner showcase
+- **Tickets Section** - Pricing with availability
+- **FAQ Section** - Expandable Q&A by category
+- **Contact Section** - Form with validation
 
 ## 🏗️ Database Schema
 
@@ -33,37 +54,55 @@ The application includes comprehensive models for:
 - Order processing and admin authentication
 - Email templates and session management
 
-## 🚀 Getting Started
+## 🚀 Quick Start
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd mxsv-landing
-   ```
+```bash
+# Clone and install
+git clone <repository-url>
+cd mxsv-landing
+npm install
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+# Start development server
+npm run dev
 
-3. **Set up environment variables**
-   Copy `.env.local` and update with your credentials:
-   ```env
-   DATABASE_URL="postgresql://..."
-   STRIPE_SECRET_KEY="sk_test_..."
-   NEXT_PUBLIC_STRIPE_PUBLISHABLE_KEY="pk_test_..."
-   SENDGRID_API_KEY="..."
-   ADMIN_KEY="Arbol2026"
-   JWT_SECRET="..."
-   ```
+# Open browser
+open http://localhost:3000
+```
 
-4. **Run the development server**
-   ```bash
-   npm run dev
-   ```
+### 🔧 Available Scripts
 
-5. **Open in browser**
-   Navigate to [http://localhost:3000](http://localhost:3000)
+```bash
+npm run dev        # Development server
+npm run build      # Production build
+npm run start      # Start production server
+npm run lint       # Run ESLint
+npm run typecheck  # TypeScript validation
+npm run clean      # Clean build artifacts
+```
+
+### 🌍 Key Routes
+
+- **`/`** - Main site (Variant A - Pure Stripe)
+- **`/experiments`** - Design variant comparison
+- **`/admin`** - Content management panel (Key: `Arbol2026`)
+
+### ⚙️ Environment Setup (Stage 3+)
+
+For future backend integration:
+```env
+# Database (Stage 3+)
+DATABASE_URL="postgresql://..."
+
+# Payments (Stage 3+)
+STRIPE_SECRET_KEY="sk_test_..."
+STRIPE_PUBLISHABLE_KEY="pk_test_..."
+
+# Email (Stage 3+)
+RESEND_API_KEY="..."
+
+# Admin Access
+ADMIN_KEY="Arbol2026"
+```
 
 ## 🎨 Design System
 
@@ -124,31 +163,70 @@ The site supports English (default) and Spanish with complete translations for:
 ## 📂 Project Structure
 
 ```
-src/
-├── app/
-│   ├── [locale]/           # Internationalized routes
-│   └── api/               # API endpoints
-├── components/
-│   ├── sections/          # Page sections
-│   ├── ui/               # Reusable UI components
-│   └── providers/        # Context providers
-├── lib/                  # Utility functions
-├── locales/             # Translation files
-└── types/               # TypeScript definitions
+mxsv-landing/
+├── docs/                   # Comprehensive documentation
+│   ├── claude.md          # Working agreement & DoD
+│   ├── plan-milestones.md # Development roadmap
+│   ├── moodboard.md       # Visual design principles
+│   └── architecture.md    # Technical architecture
+├── src/
+│   ├── app/               # Next.js App Router
+│   │   ├── experiments/   # Variant comparison
+│   │   ├── admin/         # Content management
+│   │   ├── globals.css    # Stripe-style CSS
+│   │   └── page.tsx       # Main landing (Variant A)
+│   ├── components/
+│   │   ├── layouts/       # Header, Footer
+│   │   ├── sections/      # Hero, About, Agenda, etc.
+│   │   │   └── {section}/
+│   │   │       ├── variant-a/  # Pure Stripe style
+│   │   │       ├── variant-b/  # Editorial style
+│   │   │       └── variant-c/  # Gradient accent
+│   │   └── ui/            # Reusable primitives
+│   ├── data/              # Static JSON data
+│   ├── lib/               # Utilities & themes
+│   ├── locales/           # i18n dictionaries
+│   └── styles/            # Design tokens
+├── data/                  # Conference data
+└── locales/               # Translations (en/es)
 ```
 
-## 🎯 Key Features Planned
+## 🎯 Development Roadmap
 
-- **Real-time ticket availability** with live updates
-- **Interactive agenda** with speaker filtering
-- **Admin dashboard** for content management
-- **E-commerce integration** for merchandise
-- **Email automation** for registrations
-- **Social media integration** and sharing
-- **Analytics tracking** with Google Analytics
+### ✅ **Stage 0-1: Foundation & Variant A** (COMPLETED)
+- [x] Planning documentation
+- [x] Design system and tokens
+- [x] Static data architecture
+- [x] Variant A implementation
+- [x] Admin panel skeleton
+- [x] Experiments switcher
+
+### 🔄 **Stage 2: Variant Selection** (NEXT)
+- [ ] Complete Variant B & C
+- [ ] Compare and select primary approach
+- [ ] Responsive design refinement
+- [ ] Accessibility audit (WCAG AA)
+
+### 🔮 **Stage 3+: Backend Integration**
+- [ ] Neon PostgreSQL + Prisma
+- [ ] Stripe payment processing
+- [ ] Resend email automation
+- [ ] Cloudflare R2 storage
+- [ ] Production deployment
+
+## 🏆 Current Status
+
+**✅ STAGE 0-1 COMPLETE**
+
+You now have:
+- **Production-ready Variant A** with all sections
+- **Comprehensive documentation** in `/docs/`
+- **Admin panel** for content management
+- **Design system** following Stripe principles
+- **Development environment** ready for Stage 2
+
+**Next Step**: Visit `/experiments` to compare design variants and plan Stage 2 implementation.
 
 ---
 
-**Status**: Foundation Complete ✅ | Ready for Feature Development 🚀
-
-The landing page is now running successfully at `http://localhost:3000` with a stunning hero section, animated about section, and full infrastructure ready for the remaining features.
+*Built with Stripe-style design principles • February 2026 • Stanford University*

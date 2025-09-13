@@ -1,0 +1,41 @@
+[
+  {
+    "id": "agenda-item-1",
+    "title": "Registration & Welcome Coffee",
+    "description": "Check-in, welcome coffee, and networking",
+    "startTime": "2026-02-21T08:00:00",
+    "endTime": "2026-02-21T09:00:00",
+    "location": "Stanford Memorial Auditorium Lobby",
+    "type": "networking",
+    "day": "workshops",
+    "speakers": [],
+    "order": 1,
+    "isVisible": true
+  },
+  {
+    "id": "agenda-item-2",
+    "title": "Opening Keynote: The Future of Mexico-Silicon Valley Innovation",
+    "description": "Setting the stage for two days of collaboration and innovation",
+    "startTime": "2026-02-21T09:00:00",
+    "endTime": "2026-02-21T09:45:00",
+    "location": "Stanford Memorial Auditorium",
+    "type": "keynote",
+    "day": "workshops",
+    "speakers": ["speaker-1"],
+    "order": 2,
+    "isVisible": true
+  },
+  {
+    "id": "agenda-item-3",
+    "title": "Panel: The State of Mexican Tech",
+    "description": "Current landscape and future opportunities",
+    "startTime": "2026-02-22T09:00:00",
+    "endTime": "2026-02-22T10:00:00",
+    "location": "Stanford Memorial Auditorium",
+    "type": "panel",
+    "day": "panels",
+    "speakers": ["speaker-3", "speaker-4"],
+    "order": 3,
+    "isVisible": true
+  }
+]

@@ -1,0 +1,54 @@
+[
+  {
+    "id": "speaker-1",
+    "name": "Maria Elena Rodriguez",
+    "title": "CEO & Founder",
+    "company": "TechMexico Ventures",
+    "bio": "Maria Elena is a serial entrepreneur and investor who has built three successful startups bridging Mexican and Silicon Valley markets. She currently leads TechMexico Ventures, a $100M fund focused on cross-border technology investments.",
+    "image": "/images/speakers/maria-rodriguez.jpg",
+    "linkedin": "https://linkedin.com/in/mariaelena-rodriguez",
+    "twitter": "https://twitter.com/mariatech",
+    "website": "https://techmexico.ventures",
+    "type": "keynote",
+    "order": 1,
+    "isVisible": true
+  },
+  {
+    "id": "speaker-2",
+    "name": "David Chen",
+    "title": "Partner",
+    "company": "Andreessen Horowitz",
+    "bio": "David leads a16z's Latin America investments and has been instrumental in connecting Silicon Valley capital with emerging Mexican tech companies. He has invested in over 50 startups across the region.",
+    "image": "/images/speakers/david-chen.jpg",
+    "linkedin": "https://linkedin.com/in/davidchen-a16z",
+    "twitter": "https://twitter.com/dchen",
+    "type": "keynote",
+    "order": 2,
+    "isVisible": true
+  },
+  {
+    "id": "speaker-3",
+    "name": "Carlos Dominguez",
+    "title": "CTO",
+    "company": "Clip",
+    "bio": "Carlos has been at the forefront of Mexico's fintech revolution, leading the technical vision at Clip, one of Mexico's most successful unicorns. He previously worked at Google and Stripe.",
+    "image": "/images/speakers/carlos-dominguez.jpg",
+    "linkedin": "https://linkedin.com/in/carlosdominguez",
+    "type": "panelist",
+    "order": 3,
+    "isVisible": true
+  },
+  {
+    "id": "speaker-4",
+    "name": "Sofia Alarcon",
+    "title": "VP of Engineering",
+    "company": "Uber",
+    "bio": "Sofia leads Uber's Latin America engineering team from Silicon Valley, overseeing products used by millions across Mexico. She's passionate about building inclusive tech teams.",
+    "image": "/images/speakers/sofia-alarcon.jpg",
+    "linkedin": "https://linkedin.com/in/sofia-alarcon",
+    "twitter": "https://twitter.com/sofiaacode",
+    "type": "panelist",
+    "order": 4,
+    "isVisible": true
+  }
+]

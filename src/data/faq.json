@@ -1,0 +1,34 @@
+[
+  {
+    "id": "faq-1",
+    "category": "general",
+    "question": "What is MXSV?",
+    "answer": "MXSV (Mexico in Silicon Valley) is a premier conference that connects the innovation ecosystems of Mexico and Silicon Valley. We bring together entrepreneurs, investors, technologists, and thought leaders for two days of workshops, panels, and networking.",
+    "order": 1,
+    "isVisible": true
+  },
+  {
+    "id": "faq-2",
+    "category": "general",
+    "question": "When and where does MXSV 2026 take place?",
+    "answer": "MXSV 2026 will take place on February 21-22, 2026, at Stanford University in Palo Alto, California. The main venue is Stanford Memorial Auditorium.",
+    "order": 2,
+    "isVisible": true
+  },
+  {
+    "id": "faq-3",
+    "category": "tickets",
+    "question": "What's included with my ticket?",
+    "answer": "All tickets include access to both days of programming, networking events, welcome reception, lunch both days, and digital materials. VIP tickets include additional perks like exclusive dinners and meet & greets.",
+    "order": 3,
+    "isVisible": true
+  },
+  {
+    "id": "faq-4",
+    "category": "travel",
+    "question": "How do I get to Stanford University?",
+    "answer": "Stanford is easily accessible from San Francisco Bay Area airports. We recommend flying into San Francisco (SFO) or San Jose (SJC). We'll provide detailed transportation information closer to the event date.",
+    "order": 4,
+    "isVisible": true
+  }
+]

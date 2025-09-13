@@ -1,0 +1,42 @@
+[
+  {
+    "id": "sponsor-1",
+    "name": "Andreessen Horowitz",
+    "tier": "platinum",
+    "logo": "/images/sponsors/a16z.svg",
+    "website": "https://a16z.com",
+    "description": "Leading venture capital firm investing in bold entrepreneurs building the future",
+    "order": 1,
+    "isVisible": true
+  },
+  {
+    "id": "sponsor-2",
+    "name": "Tecnológico de Monterrey",
+    "tier": "platinum",
+    "logo": "/images/sponsors/tec-monterrey.svg",
+    "website": "https://tec.mx",
+    "description": "Private research university and leader in innovation and entrepreneurship",
+    "order": 2,
+    "isVisible": true
+  },
+  {
+    "id": "sponsor-3",
+    "name": "Stanford University",
+    "tier": "platinum",
+    "logo": "/images/sponsors/stanford.svg",
+    "website": "https://stanford.edu",
+    "description": "World-renowned university at the heart of Silicon Valley innovation",
+    "order": 3,
+    "isVisible": true
+  },
+  {
+    "id": "sponsor-4",
+    "name": "ALLVP",
+    "tier": "gold",
+    "logo": "/images/sponsors/allvp.svg",
+    "website": "https://allvp.vc",
+    "description": "Mexico's leading venture capital fund",
+    "order": 4,
+    "isVisible": true
+  }
+]
